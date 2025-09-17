@@ -2,12 +2,13 @@ package com.example;
 
 
 public class Personagem {
-String nome;
+private String nome;
 private int energia = 10;
 private int fome = 0;
 private int sono = 0;
 
-public Personagem(int energia, int fome, int sono){
+public Personagem(String nome, int energia, int fome, int sono){
+    this.nome = nome;
      System.out.println(energia);
     System.out.println(this.energia);
     if(energia >= 0 && energia <= 10)
